@@ -17,7 +17,7 @@ const SignUpForm = () => {
       console.log("match");
 
       fetch(
-        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDVSmCo23_eHsGhRJwFquLRr_rzzaIAewU",
+        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBawf_72sdwcoLf6_ToLskojR4Pxp0WC0I",
         {
           method: "POST",
           body: JSON.stringify({
@@ -135,7 +135,7 @@ const SignUpForm = () => {
   return (
     <section className="section">
       <div className="signupFrm">
-        <div className="wrapper">
+        {/* <div className="wrapper"> */}
           
             <form className="form" onSubmit={signUpOnSubmitHandler}>
               <h1 className="title">Sign up</h1>
@@ -215,7 +215,7 @@ const SignUpForm = () => {
             </div>
           )} */}
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 };
